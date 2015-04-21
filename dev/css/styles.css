@@ -1,0 +1,323 @@
+@font-face {
+  font-family: 'hominisnormal';
+  src: url('../fonts/HOMINIS-webfont.eot');
+  src: url('../fonts/HOMINIS-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/HOMINIS-webfont.woff') format('woff'), url('../fonts/HOMINIS-webfont.ttf') format('truetype'), url('../fonts/HOMINIS-webfont.svg#hominisnormal') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'league_gothicregular';
+  src: url('../fonts/leaguegothic-regular-webfont.eot');
+  src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'), url('../fonts/leaguegothic-regular-webfont.woff') format('woff'), url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'), url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+header {
+  padding-top: 60px; }
+  header .logo {
+    border: 4px solid #323330;
+    margin: 0 20px;
+    background-color: #eee8c5;
+    margin-top: 40px; }
+    header .logo:before {
+      height: 100px;
+      width: 100px;
+      content: '';
+      background-image: url('/the-cutlery/dev/imgs/scissors-100.png');
+      background-size: 100px;
+      margin-top: -60px;
+      display: inline-table; }
+  header h1 {
+    font-family: hominisnormal;
+    font-size: 60px;
+    letter-spacing: 0; }
+  header .tagline {
+    font-size: 24px;
+    margin: 10px 0 20px; }
+    header .tagline span {
+      border-bottom: 3px solid #323330; }
+  header .primary-links {
+    font-size: 24px;
+    background-color: #ffe71a;
+    border: 4px solid #323330;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 5px;
+    margin-left: 5px; }
+    header .primary-links ul {
+      margin: 0; }
+      header .primary-links ul li {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        header .primary-links ul li:hover, header .primary-links ul li:focus {
+          background-color: #323330;
+          color: #ffe71a;
+          text-decoration: underline;
+          cursor: pointer; }
+      header .primary-links ul li:nth-of-type(1) {
+        border-bottom: 4px solid #323330; }
+      header .primary-links ul li:nth-of-type(2) {
+        border-bottom: 4px solid #323330; }
+
+@media (min-width: 768px) {
+  header {
+    background-image: url('/the-cutlery/dev/imgs/barber-bkg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 75px; }
+    header .logo {
+      width: 740px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 75px; }
+      header .logo:before {
+        height: 150px;
+        width: 150px;
+        content: '';
+        background-image: url('/the-cutlery/dev/imgs/scissors-100.png');
+        background-size: 150px;
+        margin-top: -75px; }
+    header h1 {
+      font-size: 72px;
+      margin-bottom: 20px;
+      margin-top: 30px; }
+    header .tagline {
+      font-size: 30px;
+      margin-top: 40px;
+      margin-bottom: 30px; }
+    header .primary-links {
+      font-size: 32px;
+      background-color: transparent;
+      border: none;
+      margin-top: 75px;
+      margin-bottom: 75px; }
+      header .primary-links a:hover {
+        color: #ffe71a; }
+      header .primary-links ul li {
+        border: 4px solid #323330;
+        background-color: #ffe71a;
+        padding: 10px 0;
+        line-height: 50px; }
+        header .primary-links ul li:nth-of-type(2) {
+          border-right: 4px solid #323330;
+          border-left: 4px solid #323330; } }
+
+@media (min-width: 992px) {
+  header {
+    padding-top: 150px; }
+    header .logo {
+      width: 800px; }
+    header .primary-links {
+      margin-top: 150px;
+      font-size: 36px; }
+    header .tagline {
+      font-size: 32px; } }
+
+@media (max-width: 420px) {
+  header h1 {
+    font-size: 40px;
+    margin-top: 10px; } }
+
+.map {
+  height: 200px;
+  background-color: gray; }
+
+ul.leaders {
+  max-width: 40em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none; }
+
+ul.leaders li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "; }
+
+ul.leaders span:first-child {
+  padding-right: 0.33em;
+  background: #eee8c5; }
+
+ul.leaders span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: #eee8c5; }
+
+.selections {
+  margin-bottom: 80px; }
+  .selections:first-child {
+    margin-top: 40px; }
+  .selections h2 {
+    font-size: 32px;
+    padding-bottom: 15px; }
+    .selections h2 span {
+      border-bottom: 4px solid #323330;
+      padding-right: 15px;
+      margin-left: -15px;
+      padding-left: 15px; }
+  .selections ul {
+    font-size: 28px; }
+    .selections ul li {
+      line-height: 50px; }
+
+#map-canvas {
+  height: 400px;
+  margin-top: 40px;
+  background-color: grey; }
+
+address {
+  font-size: 28px; }
+
+@media (min-width: 768px) {
+  .container.primary-info {
+    margin-top: -144px; }
+  .selections {
+    margin-bottom: 80px;
+    margin-top: 160px; }
+    .selections h2 {
+      font-size: 42px;
+      text-align: center;
+      margin-top: 10px;
+      z-index: 1; }
+    .selections div {
+      z-index: 1; } }
+
+@media (min-width: 992px) {
+  .selections {
+    margin-bottom: 240px;
+    margin-top: 360px; }
+    .selections:first-child {
+      margin-top: 160px; } }
+
+.info {
+  border: 4px solid #323330;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+@media (min-width: 768px) {
+  .info {
+    border: 4px solid #323330;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 240px;
+    line-height: 240px; }
+    .info:nth-of-type(2) {
+      border-left: 0;
+      border-right: 0; }
+    .info:nth-of-type(4) {
+      border-top: 0; }
+    .info:nth-of-type(5) {
+      border-left: 0;
+      border-right: 0;
+      border-top: 0; }
+    .info:nth-of-type(6) {
+      border-top: 0; } }
+
+/*!   kudos 
+    * http://stackoverflow.com/questions/24337512/create-slope-full-width-css3
+    * http://jsfiddle.net/jme11/D9M2L/
+*/
+.divider {
+  display: none; }
+
+@media (min-width: 768px) {
+  .divider {
+    transform: translateZ(0) skew(0, -2deg);
+    content: '';
+    width: 100%;
+    height: 100px;
+    margin-top: -50px;
+    background-color: #eee8c5;
+    display: block; } }
+
+/* .divide-sections {
+    width:100%;
+    background-color:red;
+    height:1px;
+    position:relative;
+    &:before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background-color: blue;
+        left: 0;
+        right: 0;
+        transform: matrix(1,-0.10,0,1,0,0);
+    }
+}
+
+.divider {
+    display: none;
+    background: $yellow;
+}
+
+.diagonal {
+    display: none;
+}
+
+@media (min-width: 768px ) { 
+
+    .diagonal {
+        z-index: 1;
+        padding: 2em;
+
+    }
+    .diagonal:before {
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+        -webkit-transform-origin: 3% 0;
+        transform-origin: 3% 0;
+        top: 0;
+        left: -25%;
+        z-index: -1;
+        width: 150%;
+        height: 100%;
+        background: inherit;
+    }
+    .divider:before {
+        position: absolute;
+        content:'';
+    }
+
+    .divider {
+        position: relative;
+        background: $beige;
+        color: #fff;
+        text-align: center;
+        display: block;
+    }
+
+}
+ */
+body {
+  font-family: league_gothicregular;
+  font-size: 24px;
+  color: #323330;
+  font-kerning: normal;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+  background-color: #eee8c5; }
+
+a {
+  color: inherit; }
+  a:hover {
+    color: inherit; }
+  a:focus {
+    color: inherit; }
+
+.v-center {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 36px; } }
