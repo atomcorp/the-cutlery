@@ -1,0 +1,11 @@
+footer {
+	background-color: $grey;
+	padding: 80px 0;
+	font-size: 24px;
+}
+
+@media (min-width: 768px ) { 
+footer {
+	padding: 160px 0;
+}
+}

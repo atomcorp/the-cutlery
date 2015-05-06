@@ -1,0 +1,19 @@
+include ./vars.jade
+header
+	.logo.text-center
+			h1 #{business.bName}
+			p.tagline
+				span #{business.tagline}
+	.container
+		.primary-links.row
+			.text-uppercase.xs-col-12.text-center
+				ul.list-inline
+					li.col-xs-12.col-sm-3.col-sm-offset-0.col-md-3.col-md-offset-0.v-center.move-down
+						span 
+							a(href='#').prices-section Prices
+					li.col-xs-12.col-sm-3.col-sm-offset-1.col-md-3.col-md-offset-1.v-center.move-down
+						span 
+							a(href='#').open-times-section Opening Times
+					li.col-xs-12.col-sm-3.col-sm-offset-1.col-md-3.col-md-offset-1.v-center.move-down
+						span 
+							a(href='#').location-section Location

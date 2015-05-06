@@ -141,12 +141,12 @@ ul.leaders li:before {
 
 ul.leaders span:first-child {
   padding-right: 0.33em;
-  background: #eee8c5; }
+  background: #ebecf1; }
 
 ul.leaders span + span {
   float: right;
   padding-left: 0.33em;
-  background: #eee8c5; }
+  background: #ebecf1; }
 
 .selections {
   margin-bottom: 80px; }
@@ -165,10 +165,21 @@ ul.leaders span + span {
     .selections ul li {
       line-height: 50px; }
 
+.primary-info .prices-section, .primary-info .open-times-section, .primary-info .location-section {
+  position: relative; }
+  .primary-info .prices-section:before, .primary-info .open-times-section:before, .primary-info .location-section:before {
+    background-color: #ebecf1;
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    padding: 40px;
+    margin-top: -5%; }
+
 #map-canvas {
   height: 400px;
   margin-top: 40px;
-  background-color: grey; }
+  background-color: #ebecf1; }
 
 address {
   font-size: 28px; }

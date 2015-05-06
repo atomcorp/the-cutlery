@@ -1,0 +1,42 @@
+@import 'colours';
+@import 'fonts';
+@import 'header';
+@import 'primarylinks';
+@import 'addnl-info';
+@import 'divider';
+@import 'maps';
+@import 'footer';
+
+
+body {
+	font-family: league_gothicregular;
+	font-size: 24px;
+	color:$black;
+	font-kerning:normal;
+	letter-spacing: 1px; // removed from h1 tho
+	overflow-x: hidden;	
+	background-color: $beige;
+}
+
+a {
+	color: inherit;
+	&:hover {
+		color: inherit;
+	}
+	&:focus {
+		color: inherit;
+	}
+}
+
+.v-center {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+@media (min-width: 768px ) { 
+	body {
+		font-size: 36px;
+	}
+}
+

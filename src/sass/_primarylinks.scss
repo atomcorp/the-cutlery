@@ -1,0 +1,101 @@
+.map {
+	height:200px;
+	background-color: gray;
+}
+
+ul.leaders {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: $grey}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: $grey}
+
+.selections {
+	margin-bottom: 80px;
+	&:first-child {
+	margin-top: 40px;	
+	}
+	h2 {
+		font-size: 32px;
+		padding-bottom: 15px;
+		span {
+			border-bottom: 4px solid $black;
+			padding-right: 15px;
+			margin-left: -15px;
+			padding-left: 15px;
+		}
+	}
+	ul {
+		font-size: 28px;
+		li {
+			line-height: 50px;
+		}
+	}
+}
+.primary-info {
+	.prices-section, .open-times-section, .location-section {
+		position: relative;
+		&:before {
+		  background-color: $grey;
+		  content: ' ';
+		  position: absolute;
+		  width: 100%;
+		  height: 120%;
+		  padding: 40px;
+		  margin-top: -5%;
+		}
+	}
+}
+
+
+#map-canvas {
+	height: 400px;
+	margin-top::40px; 
+	background-color:$grey;
+}
+
+address {
+	font-size: 28px;
+}
+
+@media (min-width: 768px ) { 
+	.container.primary-info {
+		margin-top: -144px; // erase divider spacing
+	}
+	.selections {
+		margin-bottom: 80px;
+		margin-top: 160px;
+		z-index:1;
+		h2 {
+			font-size: 42px;
+			text-align: center;
+			margin-top: 10px;
+			z-index:1;
+		}
+	}
+}
+
+@media (min-width: 992px ) {
+	.selections {
+	margin-bottom: 240px;
+	margin-top: 360px;
+	&:first-child {
+	margin-top: 160px;	
+	}
+	}
+}

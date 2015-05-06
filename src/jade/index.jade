@@ -1,0 +1,20 @@
+include ./vars.jade
+doctype html
+html(lang="en")
+  head
+    title #{business.bName}
+    
+    link(rel="stylesheet", href="css/bootstrap.min.css")
+    link(rel="stylesheet", href="css/styles.css")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  body
+    include ./header.jade
+    .diagonal.divider.divider-header 
+    .container.primary-info
+      include ./primary-links
+      include ./addnl-info
+    .diagonal.divider.divider-footer  
+    include ./footer
+    script(src="js/jquery.min.js", type="text/javascript")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE1lbobm1p5GYatJWwpPx7Q9zcAB9VImU")
+    script(src="js/all-scripts.min.js", type="text/javascript")
