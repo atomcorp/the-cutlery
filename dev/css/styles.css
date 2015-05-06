@@ -23,7 +23,7 @@ header {
       height: 100px;
       width: 100px;
       content: '';
-      background-image: url('/the-cutlery/dev/imgs/scissors-100.png');
+      background-image: url('../imgs/scissors-100.png');
       background-size: 100px;
       margin-top: -60px;
       display: inline-table; }
@@ -61,7 +61,7 @@ header {
 
 @media (min-width: 768px) {
   header {
-    background-image: url('/the-cutlery/dev/imgs/barber-bkg.jpg');
+    background-image: url('../imgs/barber-bkg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -76,7 +76,7 @@ header {
         height: 150px;
         width: 150px;
         content: '';
-        background-image: url('/the-cutlery/dev/imgs/scissors-100.png');
+        background-image: url('../imgs/scissors-100.png');
         background-size: 150px;
         margin-top: -75px; }
     header h1 {
